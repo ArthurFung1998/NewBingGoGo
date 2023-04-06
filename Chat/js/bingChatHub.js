@@ -459,7 +459,14 @@ async function createChat(theChatType) {
 	try {
 		await copyCookies(magicUrl);
 		let res = await fetch(URLTrue(magicUrl, 'turing/conversation/create'));
-		let resjson = await res.json();
+		let rText = await res.text();
+		if(rText.length<1){
+			return {
+				ok: false,
+				message: "魔法似乎不能正常工作，试试换一个魔法链接？"
+			};
+		}
+		let resjson = JSON.parse(rText);
 		if (!resjson.result) {
 			console.warn(resjson);
 			return {
