@@ -8,12 +8,14 @@
                 "disable_emoji_spoken_text",
                 "responsible_ai_policy_235",
                 "enablemm",
-                "h3precise",
-                "telmet",
-                "jbfv2",
-                "c2b47e4f",
-                "dv3sugg",
-                "clgalileo"
+                "h3imaginative",
+                "clgalileo",
+                "gencontentv3",
+                "jbf101",
+                "cachewriteext",
+                "e2ecachewrite",
+                "nodlcpcwrite",
+                "dv3sugg"
             ],
             "allowedMessageTypes": [
                 "Chat",
@@ -28,21 +30,21 @@
                 "SearchQuery"
             ],
             "sliceIds": [
-                "semserpsup3",
-                "styleqnatg",
-                "lgintsuppcf",
-                "sydpayajax",
-                "toneexp",
-                "327telmet",
-                "325contents0",
-                "324jbfv2",
-                "303hubcancls0",
-                "321jobsgndv0",
-                "328throt",
-                "328postclss0"
+                "audseq",
+                "chk1cln",
+                "nofbkcf",
+                "nosharepre",
+                "fixsacodecf",
+                "405suggbs0",
+                "scctl",
+                "403jbf101",
+                "udstrclm8cmp",
+                "udstrclm8",
+                "329v6webtrunc",
+                "404e2ewrt"
             ],
             "verbosity": "verbose",
-            "traceId": "64254f576d25417991cc62c7e0327a56",
+            "traceId": "6431afca6b984760813d258819ea8da1",
             "isStartOfSession": true,
             "message": {
                 "locale": "zh-CN",
@@ -52,69 +54,68 @@
                 "locationHints": [
                     {
                         "Center": {
-                            "Latitude": 30.480732417746996,
-                            "Longitude": 114.39287836398195
+                            "Latitude": 30.47408892899758,
+                            "Longitude": 114.39626142462203
                         },
                         "RegionType": 2,
                         "SourceType": 11
                     },
                     {
-                        "country": "United States",
-                        "state": "Texas",
-                        "city": "Dallas",
-                        "zipcode": "75207",
-                        "timezoneoffset": -6,
-                        "dma": 623,
-                        "countryConfidence": 8,
+                        "country": "Japan",
+                        "state": "Tokyo",
+                        "city": "Chiyoda-Ku",
+                        "zipcode": "102-0074",
+                        "timezoneoffset": 9,
+                        "countryConfidence": 9,
                         "cityConfidence": 5,
                         "Center": {
-                            "Latitude": 32.7928,
-                            "Longitude": -96.8274
+                            "Latitude": 35.6918,
+                            "Longitude": 139.7504
                         },
                         "RegionType": 2,
                         "SourceType": 1
                     }
                 ],
-                "timestamp": "2023-03-30T16:59:05+08:00",
+                "timestamp": "2023-04-09T02:17:54+08:00",
                 "author": "user",
                 "inputMethod": "Keyboard",
                 "text": "写一个关于火鸡的故事并配上插图，插图用英文关键字。",
                 "messageType": "Chat"
             },
-            "conversationSignature": "5shxKBMRXAZsV2oIWXh4kiB26SR/cCJZqPs3D6u1gt8=",
+            "conversationSignature": "8PCQDR17aJuoDhR1Bnjhky0u45585fIrgj+krF+FDKk=",
             "participant": {
                 "id": "844428653138895"
             },
-            "conversationId": "51D|BingProd|1FC03B6D285F58248A20E1CB43F0AE67E7CB6D06DB6202B5A7368842A4A42731",
+            "conversationId": "51D|BingProd|1674AA6DB32CD3986CC8B4F17F0A1EEA876491D0DDF15F5E54F67C717E3298A2",
             "previousMessages": [
                 {
-                    "text": "你好，我在这里帮你查答案。你有哪些问题？",
+                    "text": "谢谢你帮我理清头绪! 我现在能帮你做什么?",
                     "author": "bot",
                     "adaptiveCards": [],
                     "suggestedResponses": [
                         {
-                            "text": "下一次日食是什么时候",
+                            "text": "最深的海洋是哪个?",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "36cfe845-e509-1a64-171d-716978470b2a",
+                            "messageId": "7565826e-3c48-ad77-a50b-e338368234b9",
                             "offense": "Unknown"
                         },
                         {
-                            "text": "谁第一个发现南极洲？",
+                            "text": "我想学习一项新技能",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "4fe930b5-1fff-8c38-7f91-4c086d9a5282",
+                            "messageId": "fed15daf-871c-662d-fbf4-518eb751592c",
                             "offense": "Unknown"
                         },
                         {
-                            "text": "教我怎么解魔方",
+                            "text": "给我看鼓舞人心的名言",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "dac1267f-7208-6457-8a0c-729fa753e19b",
+                            "messageId": "16e86419-4945-b455-98fa-83f128fbfb9f",
                             "offense": "Unknown"
                         }
                     ],
-                    "messageId": "a67098af-04ad-e6f1-eb8d-ee256336b606",
+                    "messageId": "de4c9e1d-187a-9817-6e2c-d7b7615009b6",
                     "messageType": "Chat"
                 }
             ]

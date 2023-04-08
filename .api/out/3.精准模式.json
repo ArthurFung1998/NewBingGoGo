@@ -8,13 +8,13 @@
                 "disable_emoji_spoken_text",
                 "responsible_ai_policy_235",
                 "enablemm",
-                "h3imaginative",
-                "clgalileo",
-                "gencontentv3",
-                "telmet",
-                "jbfv2",
-                "c2b47e4f",
-                "dv3sugg"
+                "h3precise",
+                "jbf101",
+                "cachewriteext",
+                "e2ecachewrite",
+                "nodlcpcwrite",
+                "dv3sugg",
+                "clgalileo"
             ],
             "allowedMessageTypes": [
                 "Chat",
@@ -29,21 +29,21 @@
                 "SearchQuery"
             ],
             "sliceIds": [
-                "semserpsup3",
-                "styleqnatg",
-                "lgintsuppcf",
-                "sydpayajax",
-                "toneexp",
-                "327telmet",
-                "325contents0",
-                "324jbfv2",
-                "303hubcancls0",
-                "321jobsgndv0",
-                "328throt",
-                "328postclss0"
+                "audseq",
+                "chk1cln",
+                "nofbkcf",
+                "nosharepre",
+                "fixsacodecf",
+                "405suggbs0",
+                "scctl",
+                "403jbf101",
+                "udstrclm8cmp",
+                "udstrclm8",
+                "329v6webtrunc",
+                "404e2ewrt"
             ],
             "verbosity": "verbose",
-            "traceId": "64254f576d25417991cc62c7e0327a56",
+            "traceId": "6431afca6b984760813d258819ea8da1",
             "isStartOfSession": true,
             "message": {
                 "locale": "zh-CN",
@@ -53,75 +53,74 @@
                 "locationHints": [
                     {
                         "Center": {
-                            "Latitude": 30.480732417746996,
-                            "Longitude": 114.39287836398195
+                            "Latitude": 30.47408892899758,
+                            "Longitude": 114.39626142462203
                         },
                         "RegionType": 2,
                         "SourceType": 11
                     },
                     {
-                        "country": "United States",
-                        "state": "Texas",
-                        "city": "Dallas",
-                        "zipcode": "75207",
-                        "timezoneoffset": -6,
-                        "dma": 623,
-                        "countryConfidence": 8,
+                        "country": "Japan",
+                        "state": "Tokyo",
+                        "city": "Chiyoda-Ku",
+                        "zipcode": "102-0074",
+                        "timezoneoffset": 9,
+                        "countryConfidence": 9,
                         "cityConfidence": 5,
                         "Center": {
-                            "Latitude": 32.7928,
-                            "Longitude": -96.8274
+                            "Latitude": 35.6918,
+                            "Longitude": 139.7504
                         },
                         "RegionType": 2,
                         "SourceType": 1
                     }
                 ],
-                "timestamp": "2023-03-30T16:59:05+08:00",
+                "timestamp": "2023-04-09T02:17:54+08:00",
                 "author": "user",
                 "inputMethod": "Keyboard",
                 "text": "写一个关于火鸡的故事并配上插图，插图用英文关键字。",
                 "messageType": "Chat"
             },
-            "conversationSignature": "iI9SlN5cijAS4Y6cj2iEckMR6Q6WdprZ6K7P9Lrra40=",
+            "conversationSignature": "fZIeVEerOQj2F7rchjiMwovw2N+Kf5Oeb7cKPKkhuqg=",
             "participant": {
                 "id": "844428653138895"
             },
-            "conversationId": "51D|BingProd|9D6C2D2F5AF82902F9A6629761F1C09DB4FC45A27B894C80B13910E3C467E576",
+            "conversationId": "51D|BingProd|B90870E24941E4A08F2B6EA3704A2188D5EE64B2B5A2473824305EAA2502B876",
             "previousMessages": [
                 {
-                    "text": "好了，我已经为新的对话重置了我的大脑。你现在想聊些什么?",
+                    "text": "感谢聊天。今天我能帮你吗？",
                     "author": "bot",
                     "adaptiveCards": [],
                     "suggestedResponses": [
                         {
-                            "text": "教我一个新单词",
+                            "text": "教我怎么解魔方",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "8ff7ba7a-67a6-c6fc-559f-0f6f239772f0",
+                            "messageId": "49953806-7b68-6d52-a318-bf72f41c56cd",
                             "offense": "Unknown"
                         },
                         {
-                            "text": "全息影像的工作原理是什么?",
+                            "text": "是什么让地球旋转？",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "35851e0b-e3a9-ccbd-6298-03ac13c09187",
+                            "messageId": "18b7ad94-d2a0-16b9-deaa-e8f772a1611e",
                             "offense": "Unknown"
                         },
                         {
-                            "text": "教我一个新单词",
+                            "text": "为我编辑内容",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "233deb17-423b-4eb3-bc93-a36a63802302",
+                            "messageId": "7a0bca6e-519e-595a-047c-4aabcbb1401a",
                             "offense": "Unknown"
                         }
                     ],
-                    "messageId": "1eaded59-b5dc-5323-1d82-0a623baf1df2",
+                    "messageId": "95273740-f0d4-2678-8909-16d329e1406b",
                     "messageType": "Chat"
                 }
             ]
         }
     ],
-    "invocationId": "0",
+    "invocationId": "4",
     "target": "chat",
     "type": 4
 }
