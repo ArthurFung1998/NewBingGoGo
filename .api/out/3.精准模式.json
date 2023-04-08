@@ -9,12 +9,12 @@
                 "responsible_ai_policy_235",
                 "enablemm",
                 "h3precise",
+                "clgalileo",
                 "jbf101",
                 "cachewriteext",
                 "e2ecachewrite",
                 "nodlcpcwrite",
-                "dv3sugg",
-                "clgalileo"
+                "dv3sugg"
             ],
             "allowedMessageTypes": [
                 "Chat",
@@ -43,7 +43,7 @@
                 "404e2ewrt"
             ],
             "verbosity": "verbose",
-            "traceId": "6431afca6b984760813d258819ea8da1",
+            "traceId": "6431b17084a148809965f0f5e7c15247",
             "isStartOfSession": true,
             "message": {
                 "locale": "zh-CN",
@@ -75,52 +75,20 @@
                         "SourceType": 1
                     }
                 ],
-                "timestamp": "2023-04-09T02:17:54+08:00",
+                "timestamp": "2023-04-09T02:24:49+08:00",
                 "author": "user",
                 "inputMethod": "Keyboard",
-                "text": "写一个关于火鸡的故事并配上插图，插图用英文关键字。",
+                "text": "你好",
                 "messageType": "Chat"
             },
-            "conversationSignature": "fZIeVEerOQj2F7rchjiMwovw2N+Kf5Oeb7cKPKkhuqg=",
+            "conversationSignature": "iDdpUJVAJAZpsS2yjwsSg4oenU0HIyrGgc7hh8l4qac=",
             "participant": {
                 "id": "844428653138895"
             },
-            "conversationId": "51D|BingProd|B90870E24941E4A08F2B6EA3704A2188D5EE64B2B5A2473824305EAA2502B876",
-            "previousMessages": [
-                {
-                    "text": "感谢聊天。今天我能帮你吗？",
-                    "author": "bot",
-                    "adaptiveCards": [],
-                    "suggestedResponses": [
-                        {
-                            "text": "教我怎么解魔方",
-                            "contentOrigin": "DeepLeo",
-                            "messageType": "Suggestion",
-                            "messageId": "49953806-7b68-6d52-a318-bf72f41c56cd",
-                            "offense": "Unknown"
-                        },
-                        {
-                            "text": "是什么让地球旋转？",
-                            "contentOrigin": "DeepLeo",
-                            "messageType": "Suggestion",
-                            "messageId": "18b7ad94-d2a0-16b9-deaa-e8f772a1611e",
-                            "offense": "Unknown"
-                        },
-                        {
-                            "text": "为我编辑内容",
-                            "contentOrigin": "DeepLeo",
-                            "messageType": "Suggestion",
-                            "messageId": "7a0bca6e-519e-595a-047c-4aabcbb1401a",
-                            "offense": "Unknown"
-                        }
-                    ],
-                    "messageId": "95273740-f0d4-2678-8909-16d329e1406b",
-                    "messageType": "Chat"
-                }
-            ]
+            "conversationId": "51D|BingProd|0FA6FD4471E345362A2861025B9EE504BC2B4F01D464ED7B54C0B6D059F6CB9E"
         }
     ],
-    "invocationId": "4",
+    "invocationId": "1",
     "target": "chat",
     "type": 4
 }

@@ -44,7 +44,7 @@
                 "404e2ewrt"
             ],
             "verbosity": "verbose",
-            "traceId": "6431afca6b984760813d258819ea8da1",
+            "traceId": "6431b17084a148809965f0f5e7c15247",
             "isStartOfSession": true,
             "message": {
                 "locale": "zh-CN",
@@ -76,52 +76,52 @@
                         "SourceType": 1
                     }
                 ],
-                "timestamp": "2023-04-09T02:17:54+08:00",
+                "timestamp": "2023-04-09T02:24:49+08:00",
                 "author": "user",
                 "inputMethod": "Keyboard",
-                "text": "写一个关于火鸡的故事并配上插图，插图用英文关键字。",
+                "text": "你好",
                 "messageType": "Chat"
             },
-            "conversationSignature": "t+CZAGCjPkEXDSeVZ8ZP4V4qNJtS726i5PKINc0PB4k=",
+            "conversationSignature": "ro4XGbXemkoYeQtRqGMhZYEa7JGM4JPRKnhltbAr5NU=",
             "participant": {
                 "id": "844428653138895"
             },
-            "conversationId": "51D|BingProd|65C090D76C6C22A7934E7861569361F8AAA1D7E0FF9984DD634021B53D1BC400",
+            "conversationId": "51D|BingProd|9C97E62D08E9EE100BFEC34B266BA81D08C21B05949D8426B22E95376F617B40",
             "previousMessages": [
                 {
-                    "text": "听起来不错，我们可以在趣事和事实中寻找平衡。如何提供帮助？",
+                    "text": "很好，我还可以帮助你发现新事物并找到答案。我们首先应该做什么？",
                     "author": "bot",
                     "adaptiveCards": [],
                     "suggestedResponses": [
                         {
+                            "text": "我需要一些建议",
+                            "contentOrigin": "DeepLeo",
+                            "messageType": "Suggestion",
+                            "messageId": "e8e78bcf-c724-449d-2f8c-c0299d56a11a",
+                            "offense": "Unknown"
+                        },
+                        {
+                            "text": "附近哪里可以看到星星？",
+                            "contentOrigin": "DeepLeo",
+                            "messageType": "Suggestion",
+                            "messageId": "4688097f-119a-70aa-69cb-e7dd05b480fc",
+                            "offense": "Unknown"
+                        },
+                        {
                             "text": "蜜蜂如何酿蜜？",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "08416765-a17e-5921-95f9-0b5675f5f7e2",
-                            "offense": "Unknown"
-                        },
-                        {
-                            "text": "哪种花最香？",
-                            "contentOrigin": "DeepLeo",
-                            "messageType": "Suggestion",
-                            "messageId": "0371774a-525e-b747-0127-ca7c034ffc50",
-                            "offense": "Unknown"
-                        },
-                        {
-                            "text": "我需要帮助制定计划",
-                            "contentOrigin": "DeepLeo",
-                            "messageType": "Suggestion",
-                            "messageId": "36f21f8f-9cb8-7ec0-4737-5ef425db989a",
+                            "messageId": "abb40cd6-6ae5-5543-12a2-3274b24ff9fb",
                             "offense": "Unknown"
                         }
                     ],
-                    "messageId": "f98086bb-8bdb-70e4-f90b-c2e5bda6f1f6",
+                    "messageId": "1d3be5f3-7497-0e44-4659-13199334e8ac",
                     "messageType": "Chat"
                 }
             ]
         }
     ],
-    "invocationId": "3",
+    "invocationId": "2",
     "target": "chat",
     "type": 4
 }

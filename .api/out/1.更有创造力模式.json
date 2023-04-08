@@ -9,13 +9,13 @@
                 "responsible_ai_policy_235",
                 "enablemm",
                 "h3imaginative",
-                "clgalileo",
-                "gencontentv3",
                 "jbf101",
                 "cachewriteext",
                 "e2ecachewrite",
                 "nodlcpcwrite",
-                "dv3sugg"
+                "dv3sugg",
+                "clgalileo",
+                "gencontentv3"
             ],
             "allowedMessageTypes": [
                 "Chat",
@@ -44,7 +44,7 @@
                 "404e2ewrt"
             ],
             "verbosity": "verbose",
-            "traceId": "6431afca6b984760813d258819ea8da1",
+            "traceId": "6431b17084a148809965f0f5e7c15247",
             "isStartOfSession": true,
             "message": {
                 "locale": "zh-CN",
@@ -76,52 +76,52 @@
                         "SourceType": 1
                     }
                 ],
-                "timestamp": "2023-04-09T02:17:54+08:00",
+                "timestamp": "2023-04-09T02:24:49+08:00",
                 "author": "user",
                 "inputMethod": "Keyboard",
-                "text": "写一个关于火鸡的故事并配上插图，插图用英文关键字。",
+                "text": "你好",
                 "messageType": "Chat"
             },
-            "conversationSignature": "8PCQDR17aJuoDhR1Bnjhky0u45585fIrgj+krF+FDKk=",
+            "conversationSignature": "Mgy5on12mqnBDpqrFh391FlSK3Ei02UPB5I9T7AcWzc=",
             "participant": {
                 "id": "844428653138895"
             },
-            "conversationId": "51D|BingProd|1674AA6DB32CD3986CC8B4F17F0A1EEA876491D0DDF15F5E54F67C717E3298A2",
+            "conversationId": "51D|BingProd|64AFEEF9E0890AB417669BC84E7BF9747EEC7C1E6FD75BEB9AEC6FBF72E13BBA",
             "previousMessages": [
                 {
-                    "text": "谢谢你帮我理清头绪! 我现在能帮你做什么?",
+                    "text": "让我们发挥创意吧！你是否在考虑某个主题，还是即兴发挥？",
                     "author": "bot",
                     "adaptiveCards": [],
                     "suggestedResponses": [
                         {
-                            "text": "最深的海洋是哪个?",
+                            "text": "我可以为好友做些什么？",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "7565826e-3c48-ad77-a50b-e338368234b9",
+                            "messageId": "c542fdf8-b837-f106-39ab-54cc188745bb",
                             "offense": "Unknown"
                         },
                         {
-                            "text": "我想学习一项新技能",
+                            "text": "给雷雨写一封情书",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "fed15daf-871c-662d-fbf4-518eb751592c",
+                            "messageId": "5b69b148-aa4f-54b4-896c-f941d0dd8300",
                             "offense": "Unknown"
                         },
                         {
-                            "text": "给我看鼓舞人心的名言",
+                            "text": "告诉我的星座",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "16e86419-4945-b455-98fa-83f128fbfb9f",
+                            "messageId": "2cc80f5f-7acc-92c5-0fe6-bdcf9bb9fc71",
                             "offense": "Unknown"
                         }
                     ],
-                    "messageId": "de4c9e1d-187a-9817-6e2c-d7b7615009b6",
+                    "messageId": "cdb3a516-b8b5-4cff-4391-5c69917f661a",
                     "messageType": "Chat"
                 }
             ]
         }
     ],
-    "invocationId": "2",
+    "invocationId": "3",
     "target": "chat",
     "type": 4
 }
