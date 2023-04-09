@@ -102,19 +102,21 @@
     height: 100%;
     z-index: -1;
     background: repeating-linear-gradient(359deg, rgb(182 196 255) 0%, rgb(207 225 255 / 78%) 100%);
-    transition: filter 1s;
 }
-
-#background.a {
+#background.a,
+body:has(#background.a) .ThemeColors{
+    transition: filter 1s;
     filter: hue-rotate(10deg);
 }
-
-#background.b {
-    filter: hue-rotate(-5deg);
+#background.b,
+body:has(#background.b) .ThemeColors{
+    transition: filter 1s;
+    filter: hue-rotate(-15deg);
 }
-
-#background.c {
-    filter: hue-rotate(-20deg);
+#background.c,
+body:has(#background.c) .ThemeColors{
+    transition: filter 1s;
+    filter: hue-rotate(-40deg);
 }
 
 
@@ -212,7 +214,7 @@ body:has(.my) #restart {
     border: 0;
     margin: 0 1rem 1rem 0;
     border-radius: 2rem;
-    background-color: #005fff38;
+    background-color: rgb(182 196 255);
     height: 1.8rem;
     font-size: 0.8rem;
     cursor: pointer;
@@ -525,18 +527,19 @@ body {
     display: inline-table;
 }
 
-.GenerateContentQuery>img {
+.GenerateContentQuery>a>img {
     max-width: 24%;
     margin: 0.5%;
     transition: all 0.8s;
     cursor: pointer;
 }
 
-.GenerateContentQuery>img:hover {
+.GenerateContentQuery>a>img:hover {
     margin: 0.2% 0.8% 0.8% 0.2%;
     box-shadow: #0000007a 2px 3px 5px 0px;
     transition: all 0.3s;
 }
+
 
 
 /* 错误部分 */
@@ -581,7 +584,7 @@ div.markdown-body {
         opacity: 0;
     }
 
-    .GenerateContentQuery>img {
+    .GenerateContentQuery>a>img {
         max-width: 49%;
         width: 49%;
     }
@@ -646,7 +649,7 @@ div.markdown-body {
         font-size: 1em;
     }
 
-    .GenerateContentQuery>img {
+    .GenerateContentQuery>a>img {
         max-width: 49%;
         width: 49%;
     }
