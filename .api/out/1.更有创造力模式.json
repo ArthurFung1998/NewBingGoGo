@@ -9,12 +9,13 @@
                 "responsible_ai_policy_235",
                 "enablemm",
                 "h3imaginative",
+                "jbf101",
+                "cachewriteext",
+                "e2ecachewrite",
+                "nodlcpcwrite",
+                "dv3sugg",
                 "clgalileo",
-                "gencontentv3",
-                "telmet",
-                "jbfv2",
-                "c2b47e4f",
-                "dv3sugg"
+                "gencontentv3"
             ],
             "allowedMessageTypes": [
                 "Chat",
@@ -29,21 +30,21 @@
                 "SearchQuery"
             ],
             "sliceIds": [
-                "semserpsup3",
-                "styleqnatg",
-                "lgintsuppcf",
-                "sydpayajax",
-                "toneexp",
-                "327telmet",
-                "325contents0",
-                "324jbfv2",
-                "303hubcancls0",
-                "321jobsgndv0",
-                "328throt",
-                "328postclss0"
+                "audseq",
+                "chk1cln",
+                "nofbkcf",
+                "nosharepre",
+                "fixsacodecf",
+                "405suggbs0",
+                "scctl",
+                "403jbf101",
+                "udstrclm8cmp",
+                "udstrclm8",
+                "329v6webtrunc",
+                "404e2ewrt"
             ],
             "verbosity": "verbose",
-            "traceId": "64254f576d25417991cc62c7e0327a56",
+            "traceId": "6431b17084a148809965f0f5e7c15247",
             "isStartOfSession": true,
             "message": {
                 "locale": "zh-CN",
@@ -53,75 +54,74 @@
                 "locationHints": [
                     {
                         "Center": {
-                            "Latitude": 30.480732417746996,
-                            "Longitude": 114.39287836398195
+                            "Latitude": 30.47408892899758,
+                            "Longitude": 114.39626142462203
                         },
                         "RegionType": 2,
                         "SourceType": 11
                     },
                     {
-                        "country": "United States",
-                        "state": "Texas",
-                        "city": "Dallas",
-                        "zipcode": "75207",
-                        "timezoneoffset": -6,
-                        "dma": 623,
-                        "countryConfidence": 8,
+                        "country": "Japan",
+                        "state": "Tokyo",
+                        "city": "Chiyoda-Ku",
+                        "zipcode": "102-0074",
+                        "timezoneoffset": 9,
+                        "countryConfidence": 9,
                         "cityConfidence": 5,
                         "Center": {
-                            "Latitude": 32.7928,
-                            "Longitude": -96.8274
+                            "Latitude": 35.6918,
+                            "Longitude": 139.7504
                         },
                         "RegionType": 2,
                         "SourceType": 1
                     }
                 ],
-                "timestamp": "2023-03-30T16:59:05+08:00",
+                "timestamp": "2023-04-09T02:24:49+08:00",
                 "author": "user",
                 "inputMethod": "Keyboard",
-                "text": "写一个关于火鸡的故事并配上插图，插图用英文关键字。",
+                "text": "你好",
                 "messageType": "Chat"
             },
-            "conversationSignature": "iI9SlN5cijAS4Y6cj2iEckMR6Q6WdprZ6K7P9Lrra40=",
+            "conversationSignature": "Mgy5on12mqnBDpqrFh391FlSK3Ei02UPB5I9T7AcWzc=",
             "participant": {
                 "id": "844428653138895"
             },
-            "conversationId": "51D|BingProd|9D6C2D2F5AF82902F9A6629761F1C09DB4FC45A27B894C80B13910E3C467E576",
+            "conversationId": "51D|BingProd|64AFEEF9E0890AB417669BC84E7BF9747EEC7C1E6FD75BEB9AEC6FBF72E13BBA",
             "previousMessages": [
                 {
-                    "text": "好了，我已经为新的对话重置了我的大脑。你现在想聊些什么?",
+                    "text": "让我们发挥创意吧！你是否在考虑某个主题，还是即兴发挥？",
                     "author": "bot",
                     "adaptiveCards": [],
                     "suggestedResponses": [
                         {
-                            "text": "教我一个新单词",
+                            "text": "我可以为好友做些什么？",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "8ff7ba7a-67a6-c6fc-559f-0f6f239772f0",
+                            "messageId": "c542fdf8-b837-f106-39ab-54cc188745bb",
                             "offense": "Unknown"
                         },
                         {
-                            "text": "全息影像的工作原理是什么?",
+                            "text": "给雷雨写一封情书",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "35851e0b-e3a9-ccbd-6298-03ac13c09187",
+                            "messageId": "5b69b148-aa4f-54b4-896c-f941d0dd8300",
                             "offense": "Unknown"
                         },
                         {
-                            "text": "教我一个新单词",
+                            "text": "告诉我的星座",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "233deb17-423b-4eb3-bc93-a36a63802302",
+                            "messageId": "2cc80f5f-7acc-92c5-0fe6-bdcf9bb9fc71",
                             "offense": "Unknown"
                         }
                     ],
-                    "messageId": "1eaded59-b5dc-5323-1d82-0a623baf1df2",
+                    "messageId": "cdb3a516-b8b5-4cff-4391-5c69917f661a",
                     "messageType": "Chat"
                 }
             ]
         }
     ],
-    "invocationId": "0",
+    "invocationId": "3",
     "target": "chat",
     "type": 4
 }

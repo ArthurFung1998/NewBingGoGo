@@ -1,3 +1,6 @@
+let imgsDiv = document.getElementById("imgs");
+let createMessage = document.getElementById('createMessage');
+
 /**获取当前页面的git参数 
 
 如果url是 http://example.com/?id=123&name=John&name=Mike
@@ -25,8 +28,23 @@ function getAllQueryStrings() {
     return result;
 }
 
-let imgs = document.getElementsByClassName("display-img");
-let createMessage = document.getElementById('createMessage');
+
+function addImg(imgSrc){
+  let img = document.createElement("img");
+  img.classList.add('display-img');
+  img.src = "../img/loading.gif";
+  imgsDiv.appendChild(img);
+  img.onload = ()=>{
+    img.onload = undefined;
+    img.src = imgSrc;
+    img.onclick = (e)=>{
+      window.open(e.target.src, '_blank');
+    };
+  }
+}
+
+
+
 window.addEventListener('load',e=>{
     let querys = getAllQueryStrings();
     let imgSrcs = querys.imgs;
@@ -36,15 +54,11 @@ window.addEventListener('load',e=>{
     }
     if(imgSrcs){
       if(imgSrcs instanceof Array){
-        for(let i=0;i<imgSrcs.length&&i<imgs.length;i++){
-            imgs[i].src = imgSrcs[i];
-            imgs[i].onclick = ()=>{
-              window.open(imgs[i].src, '_blank');
-            };
+        for(let i=0;i<imgSrcs.length;i++){
+          addImg(imgSrcs[i]);
         }
-        return;
       }else{
-        imgs[0].src = imgSrcs;
+        addImg(imgSrcs);
       }
     }
 });

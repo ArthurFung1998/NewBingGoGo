@@ -241,26 +241,29 @@ function generateContentQueryImg(message, father){
                     setTimeout(run,3000);
                     return;
                 }
-                let div = document.createElement("div");
-                div.innerHTML = imgPageHtml;
-                let imgs = div.getElementsByTagName("img");
-                if(imgs.length<1){
-                    father.innerHTML = "服务器未正常返回图片！";
-                    return;
-                }
+
+                father.innerHTML = '';
                 let theUrls = new URLSearchParams();
                 theUrls.append('createmessage',message.text);
-                father.innerHTML = '';
-                for(let el=0;el<imgs.length;el++){
-                    let img = document.createElement('img');
-                    img.src = imgs[el].src;
-                    theUrls.append('imgs',img.src.split('?')[0]);
-                    img.onclick = ()=>{
-                        window.open('chrome-extension://'+chrome.runtime.id+'/GeneratePicture/img.html?'+theUrls.toString(), '_blank');
-                    }
-                    father.appendChild(img);
+                let a = document.createElement("a");
+                father.appendChild(a);
+                //用正则找全部图片
+                let allSrc = imgPageHtml.matchAll(/<img[^<>]*src="([^"]*)"[^<>]*>/g);
+                let src = undefined;
+                let ok = false;
+                while(!(src=allSrc.next()).done){
+                    ok =true;
+                    theUrls.append('imgs',src.value[1].split('?')[0]);
+                    let img = document.createElement("img");
+                    img.src = src.value[1];
+                    a.appendChild(img);
                 }
-                div.remove();
+                if(ok){
+                    a.target = '_blank';
+                    a.href = 'chrome-extension://'+chrome.runtime.id+'/GeneratePicture/img.html?'+theUrls.toString();
+                }else{
+                    father.innerHTML = "服务器未正常返回图片！";
+                }
             }
             setTimeout(run,3000);
             
