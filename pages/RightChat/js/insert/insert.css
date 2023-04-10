@@ -1,0 +1,25 @@
+#newBingGoGoRightChat{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 650px;
+    max-height: 95vh;
+    max-width: 85vw;
+    background-color: white;
+    box-shadow: 0 0 8px 0px black;
+    display: flex;
+    flex-direction: column;
+    z-index: 999999999;
+}
+
+#newBingGoGoRightChat>iframe{
+    width: 100%;
+    border: none;
+    flex: 1;
+}
+
+#newBingGoGoRightChat>.top{
+    width: 100%;
+    height: 30px;
+}

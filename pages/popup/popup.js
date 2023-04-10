@@ -56,3 +56,10 @@ getChatHubWithMagic().then((chatWithMagic) => {
 });
 
 
+//插入窗口到当前浏览器标签
+var thisOpenBingGoGo = document.getElementById('this-open-bing-go-go');
+thisOpenBingGoGo.onclick = ()=>{
+	insertRightChatToThisTab();
+}
+
+

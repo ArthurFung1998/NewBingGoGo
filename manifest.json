@@ -9,11 +9,11 @@
 		"declarativeNetRequest",
 		"declarativeNetRequestWithHostAccess",
 		"declarativeNetRequestFeedback",
-		"unlimitedStorage"
+		"unlimitedStorage",
+		"tabs",
+		"scripting"
 	],
-	"optional_permissions": [
-		
-	],
+	"optional_permissions": [],
 	"host_permissions": [
 		"http://*/*",
 		"https://*/*",
@@ -21,7 +21,7 @@
 		"wss://*/*"
 	],
 	"icons": {
-		"128": "img/nasapod128x128.png"
+		"128": "/img/nasapod128x128.png"
 	},
 	"action": {
 		"default_popup": "/pages/popup/popup.html"
@@ -35,5 +35,16 @@
 			}
 		]
 	},
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"/pages/RightChat/RightChat.html",
+				"/pages/RightChat/js/insert/insert.css"
+			],
+			"matches": [
+				"<all_urls>"
+			]
+		}
+	],
 	"default_locale": "zh_CN"
 }
