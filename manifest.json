@@ -24,7 +24,7 @@
 		"128": "img/nasapod128x128.png"
 	},
 	"action": {
-		"default_popup": "popup/popup.html"
+		"default_popup": "/pages/popup/popup.html"
 	},
 	"declarative_net_request": {
 		"rule_resources": [

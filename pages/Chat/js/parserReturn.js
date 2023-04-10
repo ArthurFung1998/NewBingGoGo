@@ -260,7 +260,7 @@ function generateContentQueryImg(message, father){
                 }
                 if(ok){
                     a.target = '_blank';
-                    a.href = 'chrome-extension://'+chrome.runtime.id+'/GeneratePicture/img.html?'+theUrls.toString();
+                    a.href = '../GeneratePicture/img.html?'+theUrls.toString();
                 }else{
                     father.innerHTML = "服务器未正常返回图片！";
                 }

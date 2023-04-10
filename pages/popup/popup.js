@@ -1,8 +1,3 @@
-function $(qury) {
-	return document.querySelector(qury);
-}
-$('a#go-to-bing-go-go').href = 'chrome-extension://' + chrome.runtime.id + '/Chat/bing.html';
-
 //----------------------------------------
 var url_input = document.querySelector('input#url-input');
 var savecookiesButtun = document.querySelector('input#savecookies');
