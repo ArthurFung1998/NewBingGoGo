@@ -11,7 +11,8 @@
 		"declarativeNetRequestFeedback",
 		"unlimitedStorage",
 		"tabs",
-		"scripting"
+		"scripting",
+		"webRequest"
 	],
 	"optional_permissions": [],
 	"host_permissions": [
