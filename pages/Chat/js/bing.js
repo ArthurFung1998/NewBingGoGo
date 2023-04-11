@@ -140,16 +140,17 @@ function reSetStartChatMessage(type) {
 		</div>
 		`;
 	searchSuggestions.innerHTML = '';
-	let prs = nextStartProposes();
-	prs.forEach((s) => {
-		let a = document.createElement('a');
-		a.innerHTML = s;
-		a.onclick = (even) => {
-			if (searchSuggestions.style.opacity >= 1) {
-				send(even.target.innerHTML);
+	nextStartProposes().then((prs)=>{
+		prs.forEach((s) => {
+			let a = document.createElement('a');
+			a.innerHTML = s;
+			a.onclick = (even) => {
+				if (searchSuggestions.style.opacity >= 1) {
+					send(even.target.innerHTML);
+				}
 			}
-		}
-		searchSuggestions.appendChild(a);
+			searchSuggestions.appendChild(a);
+		});
 	});
 	goGoSubtitle.innerText = '想发什么呢？让我帮你！';
 	docTitle.innerText = 'NewBingGoGo:聊天啦啦啦啦';

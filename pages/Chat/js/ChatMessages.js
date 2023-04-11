@@ -43,7 +43,7 @@ let Proposes = [bingProposes[0],bingProposes[1],bingProposes[2]];
 /**
 获取建议消息
 */
-function nextStartProposes(){
+async function nextStartProposes(){
     Proposes[0] = bingProposes[Math.floor(Math.random() * bingProposes.length)];
     Proposes[1] = bingProposes[Math.floor(Math.random() * bingProposes.length)];
     Proposes[2] = bingProposes[Math.floor(Math.random() * bingProposes.length)];

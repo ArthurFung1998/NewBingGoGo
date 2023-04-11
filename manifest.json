@@ -15,10 +15,7 @@
 	],
 	"optional_permissions": [],
 	"host_permissions": [
-		"http://*/*",
-		"https://*/*",
-		"ws://*/*",
-		"wss://*/*"
+		"*://*/*"
 	],
 	"icons": {
 		"128": "/img/nasapod128x128.png"

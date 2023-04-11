@@ -8,12 +8,14 @@ let chatTypes = {
 		"responsible_ai_policy_235",
 		"enablemm",
 		"h3imaginative",
-		"jbf101",
 		"cachewriteext",
 		"e2ecachewrite",
+		"enuaug",
+		"jbf101",
 		"nodlcpcwrite",
+		"nourldedupe",
+		"dl_edge_desc",
 		"dv3sugg",
-		"clgalileo",
 		"gencontentv3"
 	],
 	//balance 平衡模式选项
@@ -24,13 +26,16 @@ let chatTypes = {
 		"responsible_ai_policy_235",
 		"enablemm",
 		"galileo",
-		"jbf101",
+		"dlwebtrunc",
+		"glpromptv6",
 		"cachewriteext",
 		"e2ecachewrite",
+		"enuaug",
+		"jbf101",
 		"nodlcpcwrite",
-		"dv3sugg",
-		"dlwebtrunc",
-		"glpromptv6"
+		"nourldedupe",
+		"dl_edge_desc",
+		"dv3sugg"
 	],
 	//精准选项
 	accurate: [
@@ -40,11 +45,13 @@ let chatTypes = {
 		"responsible_ai_policy_235",
 		"enablemm",
 		"h3precise",
-		"clgalileo",
-		"jbf101",
 		"cachewriteext",
 		"e2ecachewrite",
+		"enuaug",
+		"jbf101",
 		"nodlcpcwrite",
+		"nourldedupe",
+		"dl_edge_desc",
 		"dv3sugg"
 	]
 }
@@ -65,50 +72,34 @@ let allowedMessageTypes = [
 
 //切片id，也不知道是啥意思，反正官网的更新了
 let sliceIds = [
+	"329v6webtrunc",
+	"330uaug",
+	"403jbf101",
+	"404e2ewrt",
+	"405suggbs0",
+	"408nodedup",
 	"audseq",
 	"chk1cln",
 	"nofbkcf",
-	"nosharepre",
-	"fixsacodecf",
-	"405suggbs0",
-	"scctl",
-	"403jbf101",
-	"udstrclm8cmp",
+	"rmvmorefrq",
+	"sydnoinputt",
 	"udstrclm8",
-	"329v6webtrunc",
-	"404e2ewrt"
+	"udstrclm8cmp",
+	"scctl"
 ]
 
 
+
 async function getPreviousMessages(){
-	function getUuid() {
-		return URL.createObjectURL(new Blob()).split('/')[3];
-	}
-	let pos = getStartProposes();
-	return [{
-	  "text": getStartMessage(),
-	  "author": "bot",
-	  "adaptiveCards": [],
-	  "suggestedResponses": [{
-		  "text": pos[0],
-		  "contentOrigin": "DeepLeo",
-		  "messageType": "Suggestion",
-		  "messageId": getUuid(),
-		  "offense": "Unknown"
-	  }, {
-		  "text": pos[1],
-		  "contentOrigin": "DeepLeo",
-		  "messageType": "Suggestion",
-		  "messageId": getUuid(),
-		  "offense": "Unknown"
-	  }, {
-		  "text": pos[2],
-		  "contentOrigin": "DeepLeo",
-		  "messageType": "Suggestion",
-		  "messageId": getUuid(),
-		  "offense": "Unknown"
-	  }],
-	  "messageId": getUuid(),
-	  "messageType": "Chat"
-  }];
+	return [
+		{
+			"author": "user",
+			"description": pageText.description,
+			"contextType": "WebPage",
+			"messageType": "Context",
+			"messageId": "discover-web--page-ping-mriduna-----",
+			"sourceName": pageText.sourceName,
+			"sourceUrl": pageText.sourceUrl
+		}
+	];
 }
