@@ -6,19 +6,12 @@ var speak = document.querySelector('p#speak');
 var tallSelect = document.querySelector('select#tallSelect');
 var thisVersion = document.getElementById('thisVersion');
 var lastVersion = document.getElementById('lastVersion');
+var getPublicUrl = document.getElementById('getPublicUrl');
+var selectPublicUrl = document.getElementById('selectPublicUrl');
+var thisOpenBingGoGo = document.getElementById('this-open-bing-go-go');
 
 var expUrl = new RegExp('^(https?://)([-a-zA-z0-9]+\\.)+([-a-zA-z0-9]+)+\\S*$');
 var magicUrl;
-
-function loaded() {
-	//魔法链接输入框更新事件
-	url_input.onchange = function (even) {
-		let url = url_input.value;
-		magicUrl = url;
-		setMagicUrl(url);
-		speakString();
-	}
-}
 
 function speakString() {
 	if (!magicUrl) {
@@ -43,7 +36,7 @@ getChatHubWithMagic().then((chatWithMagic) => {
 	if (chatWithMagic == true) {
 		tallSelect.selectedIndex = 1;
 	} else {
-		tallSelect.selectedIndex = 0;	
+		tallSelect.selectedIndex = 0;
 	}
 	tallSelect.onchange = () => {
 		switch (tallSelect.selectedIndex) {
@@ -58,22 +51,81 @@ getChatHubWithMagic().then((chatWithMagic) => {
 });
 
 
-//插入窗口到当前浏览器标签
-var thisOpenBingGoGo = document.getElementById('this-open-bing-go-go');
-thisOpenBingGoGo.onclick = ()=>{
-	insertRightChatToThisTab();
+function loaded() {
+	//魔法链接输入框更新事件
+	url_input.onchange = function (even) {
+		let url = url_input.value;
+		magicUrl = url;
+		setMagicUrl(url);
+		speakString();
+	}
+
+	//插入窗口到当前浏览器标签
+	thisOpenBingGoGo.onclick = () => {
+		insertRightChatToThisTab();
+	}
+
+	//获取公共魔法链接
+	getPublicUrl.onclick = async () => {
+		try {
+			getPublicUrl.innerText = '正在获取..'
+			let res = await fetch('https://gitee.com/jja8/NewBingGoGo/raw/master/publicUrl.json');
+			let json = await res.json();
+			selectPublicUrl.innerHTML = `<option value="${magicUrl}">(使用私有魔法链接)</option>`;
+			for (let the in json) {
+				let op = document.createElement('option');
+				op.innerText = json[the].name;
+				op.value = json[the].url;
+				selectPublicUrl.appendChild(op);
+			}
+			getPublicUrl.style.display = 'none';
+			selectPublicUrl.style.display = 'block';
+		} catch (e) {
+			console.warn(e);
+			getPublicUrl.innerText = '获取失败';
+		}
+	}
+
+	//选择公共魔法链接
+	selectPublicUrl.onchange = () => {
+		if (selectPublicUrl.value) {
+			url_input.value = selectPublicUrl.value;
+		} else {
+			url_input.value = magicUrl;
+		}
+		url_input.onchange();
+	}
+
+
+	async function versionload() {
+		//获取最新版本号和当前版本号
+		try {
+			let res = await fetch(chrome.runtime.getURL('manifest.json'));
+			let json = await res.json();
+			thisVersion.innerText = json.version;
+		} catch (e) {
+			console.warn(e);
+			thisVersion.innerText = '获取失败';
+		}
+
+		try {
+			let res = await fetch('https://gitee.com/jja8/NewBingGoGo/raw/master/manifest.json');
+			let json = await res.json();
+			lastVersion.innerText = json.version;
+		} catch (e) {
+			console.warn(e);
+			lastVersion.innerText = '获取失败';
+		}
+	}
+	versionload();
 }
 
 
-//获取最新版本号和当前版本号
-fetch(chrome.runtime.getURL('manifest.json')).then(async (res)=>{
-	let json = await res.json();
-	thisVersion.innerText = json.version;
-});
 
-fetch('https://gitee.com/jja8/NewBingGoGo/raw/master/manifest.json').then(async (res)=>{
-	let json = await res.json();
-	lastVersion.innerText = json.version;
-});
+
+
+
+
+
 
 
