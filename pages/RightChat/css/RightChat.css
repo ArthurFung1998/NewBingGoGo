@@ -1,0 +1,24 @@
+:root{
+    font-size: 15px;
+}
+
+#restart{
+    display: none;
+}
+
+#goGoSubtitle{
+    position: absolute;
+    margin: 0.5rem;
+    top: 0;
+    left: 0;
+}
+#head{
+    height: 2rem;
+}
+#ChatRecordsListDiv{
+    margin-top: 2rem;
+}
+
+#showChatRecords{
+    display: none;
+}

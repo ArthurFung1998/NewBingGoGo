@@ -32,7 +32,7 @@ function getAllQueryStrings() {
 function addImg(imgSrc){
   let img = document.createElement("img");
   img.classList.add('display-img');
-  img.src = "../img/loading.gif";
+  img.src = "/img/loading.gif";
   imgsDiv.appendChild(img);
   img.onload = ()=>{
     img.onload = undefined;

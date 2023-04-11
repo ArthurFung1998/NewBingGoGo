@@ -1,14 +1,11 @@
-function $(qury) {
-	return document.querySelector(qury);
-}
-$('a#go-to-bing-go-go').href = 'chrome-extension://' + chrome.runtime.id + '/Chat/bing.html';
-
 //----------------------------------------
 var url_input = document.querySelector('input#url-input');
 var savecookiesButtun = document.querySelector('input#savecookies');
 var loadcookiesButtun = document.querySelector('input#loadcookies');
 var speak = document.querySelector('p#speak');
 var tallSelect = document.querySelector('select#tallSelect');
+var thisVersion = document.getElementById('thisVersion');
+var lastVersion = document.getElementById('lastVersion');
 
 var expUrl = new RegExp('^(https?://)([-a-zA-z0-9]+\\.)+([-a-zA-z0-9]+)+\\S*$');
 var magicUrl;
@@ -58,6 +55,25 @@ getChatHubWithMagic().then((chatWithMagic) => {
 				break;
 		}
 	}
+});
+
+
+//插入窗口到当前浏览器标签
+var thisOpenBingGoGo = document.getElementById('this-open-bing-go-go');
+thisOpenBingGoGo.onclick = ()=>{
+	insertRightChatToThisTab();
+}
+
+
+//获取最新版本号和当前版本号
+fetch(chrome.runtime.getURL('manifest.json')).then(async (res)=>{
+	let json = await res.json();
+	thisVersion.innerText = json.version;
+});
+
+fetch('https://gitee.com/jja8/NewBingGoGo/raw/master/manifest.json').then(async (res)=>{
+	let json = await res.json();
+	lastVersion.innerText = json.version;
 });
 
 
