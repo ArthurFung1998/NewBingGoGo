@@ -11,14 +11,14 @@ function insert(){
     inTo.innerHTML = `
     <link rel="stylesheet" href="${chrome.runtime.getURL('/pages/RightChat/js/insert/insert.css')}">
     <div class="top"></div>
-    <iframe src="${chrome.runtime.getURL('/pages/RightChat/RightChat.html')}"></iframe>
+    <iframe class="iframe" src="${chrome.runtime.getURL('/pages/RightChat/RightChat.html')}"></iframe>
     `;
     document.body.appendChild(inTo);
 }
 
 
 
-
+let newBingGoGoiframe = document.querySelector('#newBingGoGoRightChat>.iframe');
 let oDivTop = document.querySelector('#newBingGoGoRightChat>.top');
 let oDiv = document.querySelector('#newBingGoGoRightChat');
 //触屏拖动元素实现
@@ -63,3 +63,4 @@ oDivTop.addEventListener('mousedown',function (ev) {
     document.addEventListener('mouseup', fun1);
     return false;
 });
+
