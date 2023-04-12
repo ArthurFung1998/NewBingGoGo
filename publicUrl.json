@@ -1,7 +1,11 @@
 [
     {
-        "name":"简简aw cloudflare (最快，推荐！)",
+        "name":"简简aw cloudflare (较快，推荐！)",
         "url":"https://mybing.xn--xyza.top/"
+    },
+    {
+        "name":"来自‘李果君’分享 2 (较快，推荐！)",
+        "url":"https://b23.cafe/"
     },
     {
         "name":"简简aw render CDN加速",
@@ -44,10 +48,6 @@
         "url":"https://mrliguo-bing.onrender.com/"
     },
     {
-        "name":"来自‘李果君’分享 2",
-        "url":"https://b23.cafe/"
-    },
-    {
         "name":"来自‘李果君’分享 3",
         "url":"https://NewBingGoGo-MagicURL-java.liguojun.repl.co/"
     },
@@ -65,6 +65,6 @@
     },
     {
         "name":"来自‘杨鹏’分享 1",
-        "url":"https://newbinggogo-magicurl-java-production-2d7f.up.railway.app"
+        "url":"https://newbinggogo-magicurl-java-production-2d7f.up.railway.app/"
     }
 ]
