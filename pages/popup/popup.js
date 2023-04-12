@@ -9,6 +9,9 @@ var lastVersion = document.getElementById('lastVersion');
 var getPublicUrl = document.getElementById('getPublicUrl');
 var selectPublicUrl = document.getElementById('selectPublicUrl');
 var thisOpenBingGoGo = document.getElementById('this-open-bing-go-go');
+var okGitUrl = document.getElementById('okGitUrl');
+var okGitUrlNo = document.getElementById('okGitUrlNo');
+var okGitUrlGo = document.getElementById('okGitUrlGo');
 
 var expUrl = new RegExp('^(https?://)([-a-zA-z0-9]+\\.)+([-a-zA-z0-9]+)+\\S*$');
 var magicUrl;
@@ -67,25 +70,35 @@ function loaded() {
 
 	//获取公共魔法链接
 	getPublicUrl.onclick = async () => {
-		if(confirm("使用公开的魔法链接可能会导致Cookie泄漏!\n他人获取到你的Cookie可以不用密码验证码直接登录你的微软账号。\n这是非常危险的！\n是否继续？")){
-			try {
-				getPublicUrl.innerText = '正在获取..'
-				let res = await fetch('https://gitee.com/jja8/NewBingGoGo/raw/master/publicUrl.json');
-				let json = await res.json();
-				selectPublicUrl.innerHTML = `<option value="${magicUrl}">(使用私有魔法链接)</option>`;
-				for (let the in json) {
-					let op = document.createElement('option');
-					op.innerText = json[the].name;
-					op.value = json[the].url;
-					selectPublicUrl.appendChild(op);
-				}
-				getPublicUrl.style.display = 'none';
-				selectPublicUrl.style.display = 'block';
-			} catch (e) {
-				console.warn(e);
-				getPublicUrl.innerText = '获取失败';
+		//弹出确认框
+		okGitUrl.style.display = 'block';
+	}
+
+	//获取公共魔法链接
+	okGitUrlGo.onclick = async ()=>{
+		okGitUrl.style.display = 'none';
+		try {
+			getPublicUrl.innerText = '正在获取..'
+			let res = await fetch('https://gitee.com/jja8/NewBingGoGo/raw/master/publicUrl.json');
+			let json = await res.json();
+			selectPublicUrl.innerHTML = `<option value="${magicUrl}">(使用私有魔法链接)</option>`;
+			for (let the in json) {
+				let op = document.createElement('option');
+				op.innerText = json[the].name;
+				op.value = json[the].url;
+				selectPublicUrl.appendChild(op);
 			}
+			getPublicUrl.style.display = 'none';
+			selectPublicUrl.style.display = 'block';
+		} catch (e) {
+			console.warn(e);
+			getPublicUrl.innerText = '获取失败';
 		}
+	}
+	//取消获取公共魔法链接
+	okGitUrlNo.onclick = async () => {
+		//隐藏提示框
+		okGitUrl.style.display = 'none';
 	}
 
 	//选择公共魔法链接
