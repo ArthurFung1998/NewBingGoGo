@@ -10,7 +10,7 @@
     box-shadow: 0 0 8px 0px black;
     display: flex;
     flex-direction: column;
-    z-index: 999999999;
+    z-index: 99999;
     overflow: hidden;
     transition: height 0.5s;
 }
@@ -51,9 +51,13 @@
     background-color: #0000003b;
 }
 #toMin{
-    right: 40px;
+    right: 80px;
 }
 #reLoad{
+    right: 40px;
+}
+
+#toClose{
     right: 0px;
 }
 

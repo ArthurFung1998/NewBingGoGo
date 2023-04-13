@@ -8,10 +8,7 @@ async function insertRightChatToThisTab(){
         return;
     }
     tab = tab[0];
-    chrome.scripting.executeScript({
-        target:{
-            tabId:tab.id
-        },
-        files:['/pages/RightChat/js/insert/insertRun.js']
+    chrome.tabs.sendMessage(tab.id,{
+        type:'openWindow'
     });
 }

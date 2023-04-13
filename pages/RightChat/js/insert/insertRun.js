@@ -1,13 +1,25 @@
-console.log("成功插入！");
+console.log("欢迎使用NewBingGoGo");
+
+let topZIndex = 919999999;
+let shadowNameMap = new Map();
+
+
 function getUuid() {
     return URL.createObjectURL(new Blob()).split('/')[3];
 }
-let myUUID = getUuid();
+
+//监听来自popup页面的消息
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    if(message.type=='openWindow'){
+        console.log("打开新的小窗。");
+        add();
+    }
+})
 
 //监听消息
 window.addEventListener('message', (event) => {
     let message = event.data;
-    if (message.type == 'getBodyText') {
+    if (message.type == 'getBodyText') {//监听获取当前页面内容消息。
         event.source.postMessage({
             type: 'reBodyText',
             description: document.body.innerText,
@@ -15,39 +27,54 @@ window.addEventListener('message', (event) => {
             sourceUrl: document.URL
         }, '*');
     }
+    if(message.type == 'onclick'){//当子窗口被点击提升窗口高度
+        let shadow = shadowNameMap.get(message.name);
+        let oDiv;
+        if(shadow){
+            oDiv = shadow.querySelector('#newBingGoGoRightChat');
+        }
+        if(oDiv){
+            oDiv.style.zIndex = topZIndex++;
+        }
+    }
 });
 
 
 
 //添加聊天窗口
-add();
 function add() {
-    function insert() {
-        let div = document.createElement('div');
-        let shadow = div.attachShadow({ mode: 'open' });
+    function insert(rootDiv,iframeName) {
+        let shadow = rootDiv.attachShadow({ mode: 'open' });
         inTo = document.createElement("div");
         inTo.id = "newBingGoGoRightChat";
+        inTo.style.zIndex = topZIndex++;
         inTo.innerHTML = `
         <link rel="stylesheet" href="${chrome.runtime.getURL('/pages/RightChat/js/insert/insert.css')}">
         <div id="top">
             <div class="letf"">NewBingGoGo</div>
             <div id="toMin" class="topRight">—</div>
             <div id="reLoad" class="topRight">↺</div>
+            <div id="toClose" class="topRight">×</div>
         </div>
-        <iframe id="iframe" src="${chrome.runtime.getURL('/pages/RightChat/RightChat.html?uuid=' + myUUID)}"></iframe>
+        <iframe id="iframe" src="${chrome.runtime.getURL('/pages/RightChat/RightChat.html?name='+iframeName)}"></iframe>
         `;
         shadow.appendChild(inTo);
-        document.body.append(div);
+        document.body.append(rootDiv);
+        shadowNameMap.set(iframeName,shadow);
         return shadow;
     }
-    let shadow = insert();
+    let iframeName = getUuid();
+    let rootDiv = document.createElement('div');
+    let shadow = insert(rootDiv,iframeName);
     let newBingGoGoiframe = shadow.querySelector('#iframe');
     let oDivTop = shadow.querySelector('#top');
     let toMin = shadow.querySelector('#toMin');
     let oDiv = shadow.querySelector('#newBingGoGoRightChat');
     let reLoad = shadow.querySelector('#reLoad');
+    let toClose = shadow.querySelector('#toClose');
     //触屏拖动元素实现
     oDivTop.addEventListener('touchstart', function (ev) {
+        oDiv.style.zIndex = topZIndex++;
         let touch = ev.targetTouches[0];
         let disX = touch.clientX - oDiv.offsetLeft;
         let disY = touch.clientY - oDiv.offsetTop;
@@ -70,6 +97,7 @@ function add() {
     });
     //鼠标拖动元素实现
     oDivTop.addEventListener('mousedown', function (ev) {
+        oDiv.style.zIndex = topZIndex++;
         let disX = ev.clientX - oDiv.offsetLeft;
         let disY = ev.clientY - oDiv.offsetTop;
         let fun = function (ev) {
@@ -101,6 +129,11 @@ function add() {
     //重新加载实现
     reLoad.onclick = () => {
         newBingGoGoiframe.src = newBingGoGoiframe.src;
+    }
+    //关闭实现
+    toClose.onclick=()=>{
+        rootDiv.remove();
+        shadowNameMap.delete(iframeName);
     }
 }
 

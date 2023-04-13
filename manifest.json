@@ -1,7 +1,7 @@
 {
 	"name": "NewBingGoGo",
 	"description": "一个基于微软bingChat接口的浏览器AI对话插件",
-	"version": "2023.4.12.2",
+	"version": "2023.4.13.0",
 	"manifest_version": 3,
 	"permissions": [
 		"storage",
@@ -33,6 +33,16 @@
 			}
 		]
 	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"pages/RightChat/js/insert/insertRun.js"
+			]
+		}
+	],
 	"web_accessible_resources": [
 		{
 			"resources": [
