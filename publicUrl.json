@@ -1,5 +1,9 @@
 [
     {
+        "name":"必应官方（国内无法使用）",
+        "url":"https://www.bing.com/"
+    },
+    {
         "name":"简简aw cloudflare (较快，推荐！)",
         "url":"https://mybing.xn--xyza.top/"
     },
