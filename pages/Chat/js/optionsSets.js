@@ -95,21 +95,23 @@ let sliceIds = [
 ]
 
 
-function timeString() {
-	var d = new Date();
-	var year = d.getFullYear();
-	var month = (d.getMonth() + 1).toString().padStart(2, "0");
-	var date = d.getDate().toString().padStart(2, "0");
-	var hour = d.getHours().toString().padStart(2, "0");
-	var minute = d.getMinutes().toString().padStart(2, "0");
-	var second = d.getSeconds().toString().padStart(2, "0");
-	var offset = "+08:00"; // 你可以根据需要修改这个值
-	var s = year + "-" + month + "-" + date + "T" + hour + ":" + minute + ":" + second + offset;
-	return s;
-}
+
 
 //生成消息对象
 async function generateMessages(sendMessageManager/*消息管理器*/,chatMessageText/*要发送的消息文本*/){
+	function timeString() {
+		var d = new Date();
+		var year = d.getFullYear();
+		var month = (d.getMonth() + 1).toString().padStart(2, "0");
+		var date = d.getDate().toString().padStart(2, "0");
+		var hour = d.getHours().toString().padStart(2, "0");
+		var minute = d.getMinutes().toString().padStart(2, "0");
+		var second = d.getSeconds().toString().padStart(2, "0");
+		var offset = "+08:00"; // 你可以根据需要修改这个值
+		var s = year + "-" + month + "-" + date + "T" + hour + ":" + minute + ":" + second + offset;
+		return s;
+	}
+	
 	if(!sendMessageManager.startTime){
 		sendMessageManager.startTime = timeString();
 	}
