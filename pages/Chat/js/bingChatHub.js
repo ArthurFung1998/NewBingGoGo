@@ -44,8 +44,7 @@ class SendMessageManager {
 			console.warn("不存在的ChatType",this.optionsSets);
 			return;
 		}
-		
-		let previousMessages = await getPreviousMessages();
+
 		let json = {
 			"arguments": [{
 				"source": source,
@@ -55,13 +54,13 @@ class SendMessageManager {
 				"verbosity": "verbose",
 				"traceId": getUuidNojian(),
 				"isStartOfSession": (this.invocationId <= 1) ? true : false,
-				"message": generateMessages(this,chat),
+				"message": await generateMessages(this,chat),
 				"conversationSignature": this.conversationSignature,
 				"participant": {
 					"id": this.clientId
 				},
 				"conversationId": this.conversationId,
-				"previousMessages": (this.invocationId <= 1) ? previousMessages : undefined
+				"previousMessages": (this.invocationId <= 1) ? await getPreviousMessages() : undefined
 			}],
 			"invocationId": this.invocationId.toString(),
 			"target": "chat",
