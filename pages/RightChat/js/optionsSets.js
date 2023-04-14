@@ -10,11 +10,11 @@ let chatTypes = {
 		"h3imaginative",
 		"cachewriteext",
 		"e2ecachewrite",
-		"enuaug",
-		"jbf101",
 		"nodlcpcwrite",
-		"nourldedupe",
-		"dl_edge_desc",
+		"responseos",
+		"travelansgnd",
+		"dl_edge_prompt",
+		"glprompt",
 		"dv3sugg",
 		"gencontentv3"
 	],
@@ -26,15 +26,13 @@ let chatTypes = {
 		"responsible_ai_policy_235",
 		"enablemm",
 		"galileo",
-		"dlwebtrunc",
-		"glpromptv6",
 		"cachewriteext",
 		"e2ecachewrite",
-		"enuaug",
-		"jbf101",
 		"nodlcpcwrite",
-		"nourldedupe",
-		"dl_edge_desc",
+		"responseos",
+		"travelansgnd",
+		"dl_edge_prompt",
+		"glprompt",
 		"dv3sugg"
 	],
 	//精准选项
@@ -47,14 +45,17 @@ let chatTypes = {
 		"h3precise",
 		"cachewriteext",
 		"e2ecachewrite",
-		"enuaug",
-		"jbf101",
 		"nodlcpcwrite",
-		"nourldedupe",
-		"dl_edge_desc",
+		"responseos",
+		"travelansgnd",
+		"dl_edge_prompt",
+		"glprompt",
 		"dv3sugg"
 	]
 }
+
+//消息来源
+let source = "cib";
 
 //接收消息类型
 let allowedMessageTypes = [
@@ -72,21 +73,63 @@ let allowedMessageTypes = [
 
 //切片id，也不知道是啥意思，反正官网的更新了
 let sliceIds = [
-	"329v6webtrunc",
-	"330uaug",
-	"403jbf101",
+	"0404sydicnbs0",
+	"185cf",
+	"330uaugs0",
+	"403tvlansgnd",
 	"404e2ewrt",
 	"405suggbs0",
-	"408nodedup",
-	"audseq",
-	"chk1cln",
-	"nofbkcf",
-	"rmvmorefrq",
+	"408nodedups0",
+	"afftoalton",
+	"chk1cf",
+	"nopreloadsscf",
+	"perfimpcomb",
+	"sugdivdis",
 	"sydnoinputt",
-	"udstrclm8",
-	"udstrclm8cmp",
+	"udscahrfon",
+	"udstrblm5",
+	"wpcssopt",
+	"0329resp",
 	"scctl"
 ]
+
+
+//生成消息对象
+async function generateMessages(sendMessageManager/*消息管理器*/,chatMessageText/*要发送的消息文本*/){
+	if(!sendMessageManager.startTime){
+		sendMessageManager.startTime = timeString();
+	}
+	return {
+		"locale": "zh-CN",
+		"market": "zh-CN",
+		"region": "US",
+		"location": "lat:47.639557;long:-122.128159;re=1000m;",
+		"locationHints": [
+			{
+				"country": "United States",
+				"state": "Texas",
+				"city": "Dallas",
+				"zipcode": "75207",
+				"timezoneoffset": -6,
+				"dma": 623,
+				"countryConfidence": 8,
+				"cityConfidence": 5,
+				"Center": {
+					"Latitude": 32.7928,
+					"Longitude": -96.8274
+				},
+				"RegionType": 2,
+				"SourceType": 1
+			}
+		],
+		"timestamp": sendMessageManager.startTime,
+		"author": "user",
+		"inputMethod": "Keyboard",
+		"text": chatMessageText,
+		"messageType": "Chat"
+	}
+	
+}
 
 
 

@@ -9,13 +9,12 @@
                 "responsible_ai_policy_235",
                 "enablemm",
                 "galileo",
-                "jbf101",
+                "responseos",
                 "cachewriteext",
                 "e2ecachewrite",
                 "nodlcpcwrite",
-                "dv3sugg",
-                "dlwebtrunc",
-                "glpromptv6"
+                "travelansgnd",
+                "dv3sugg"
             ],
             "allowedMessageTypes": [
                 "Chat",
@@ -30,21 +29,27 @@
                 "SearchQuery"
             ],
             "sliceIds": [
-                "audseq",
-                "chk1cln",
-                "nofbkcf",
-                "nosharepre",
-                "fixsacodecf",
+                "chk1cf",
+                "nopreloadsscf",
+                "winlongmsg2tf",
+                "perfimpcomb",
+                "sugdivdis",
+                "sydnoinputt",
+                "wpcssopt",
+                "wintone2tf",
+                "0404sydicnbs0",
                 "405suggbs0",
                 "scctl",
-                "403jbf101",
-                "udstrclm8cmp",
-                "udstrclm8",
-                "329v6webtrunc",
-                "404e2ewrt"
+                "330uaugs0",
+                "0329resp",
+                "udscahrfon",
+                "udstrblm5",
+                "404e2ewrt",
+                "408nodedups0",
+                "403tvlansgnd"
             ],
             "verbosity": "verbose",
-            "traceId": "6431b17084a148809965f0f5e7c15247",
+            "traceId": "64395b5032254ea1a718de20c43144bf",
             "isStartOfSession": true,
             "message": {
                 "locale": "zh-CN",
@@ -54,68 +59,69 @@
                 "locationHints": [
                     {
                         "Center": {
-                            "Latitude": 30.47408892899758,
-                            "Longitude": 114.39626142462203
+                            "Latitude": 30.480725770543124,
+                            "Longitude": 114.39287761018755
                         },
                         "RegionType": 2,
                         "SourceType": 11
                     },
                     {
-                        "country": "Japan",
-                        "state": "Tokyo",
-                        "city": "Chiyoda-Ku",
-                        "zipcode": "102-0074",
-                        "timezoneoffset": 9,
-                        "countryConfidence": 9,
+                        "country": "United States",
+                        "state": "Texas",
+                        "city": "Dallas",
+                        "zipcode": "75207",
+                        "timezoneoffset": -6,
+                        "dma": 623,
+                        "countryConfidence": 8,
                         "cityConfidence": 5,
                         "Center": {
-                            "Latitude": 35.6918,
-                            "Longitude": 139.7504
+                            "Latitude": 32.7928,
+                            "Longitude": -96.8274
                         },
                         "RegionType": 2,
                         "SourceType": 1
                     }
                 ],
-                "timestamp": "2023-04-09T02:24:49+08:00",
+                "timestamp": "2023-04-14T21:55:28+08:00",
                 "author": "user",
                 "inputMethod": "Keyboard",
-                "text": "你好",
+                "text": "为什么人类需要睡眠?",
                 "messageType": "Chat"
             },
-            "conversationSignature": "ro4XGbXemkoYeQtRqGMhZYEa7JGM4JPRKnhltbAr5NU=",
+            "conversationSignature": "yWj/RyixZjZeIbAQkHrPkEq0RfIKk4/4/yRksGR3Hlw=",
             "participant": {
-                "id": "844428653138895"
+                "id": "985155485310705"
             },
-            "conversationId": "51D|BingProd|9C97E62D08E9EE100BFEC34B266BA81D08C21B05949D8426B22E95376F617B40",
+            "conversationId": "51D|BingProd|3554A95156E7B13CBF988B1176B492BF706EAEB88F8ADECFC312F7ACA9997C5D",
             "previousMessages": [
                 {
-                    "text": "很好，我还可以帮助你发现新事物并找到答案。我们首先应该做什么？",
+                    "text": "明白了，我已经抹去了过去，专注于现在。我们现在应该探索什么?",
                     "author": "bot",
                     "adaptiveCards": [],
                     "suggestedResponses": [
                         {
-                            "text": "我需要一些建议",
+                            "text": "为什么人类需要睡眠?",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "e8e78bcf-c724-449d-2f8c-c0299d56a11a",
+                            "messageId": "0f8b3e04-2002-f84a-ce29-a027c3f294d9",
                             "offense": "Unknown"
                         },
                         {
-                            "text": "附近哪里可以看到星星？",
+                            "text": "火烈鸟为何为粉色?",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "4688097f-119a-70aa-69cb-e7dd05b480fc",
+                            "messageId": "fd041dd9-3903-835f-d918-3c0693476c93",
                             "offense": "Unknown"
                         },
                         {
-                            "text": "蜜蜂如何酿蜜？",
+                            "text": "教我一个新单词",
                             "contentOrigin": "DeepLeo",
                             "messageType": "Suggestion",
-                            "messageId": "abb40cd6-6ae5-5543-12a2-3274b24ff9fb",
+                            "messageId": "a2433d00-86d3-679a-c9b7-d376c864722f",
                             "offense": "Unknown"
                         }
                     ],
-                    "messageId": "1d3be5f3-7497-0e44-4659-13199334e8ac",
+                    "messageId": "81fb2a80-a9bb-ce9f-28d6-ea265e34cdb8",
                     "messageType": "Chat"
                 }
             ]

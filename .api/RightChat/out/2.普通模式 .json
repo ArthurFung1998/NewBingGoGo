@@ -9,15 +9,13 @@
                 "responsible_ai_policy_235",
                 "enablemm",
                 "galileo",
-                "dlwebtrunc",
-                "glpromptv6",
                 "cachewriteext",
                 "e2ecachewrite",
-                "enuaug",
-                "jbf101",
                 "nodlcpcwrite",
-                "nourldedupe",
-                "dl_edge_desc",
+                "responseos",
+                "travelansgnd",
+                "dl_edge_prompt",
+                "glprompt",
                 "dv3sugg"
             ],
             "allowedMessageTypes": [
@@ -33,23 +31,27 @@
                 "SearchQuery"
             ],
             "sliceIds": [
-                "329v6webtrunc",
-                "330uaug",
-                "403jbf101",
+                "0404sydicnbs0",
+                "185cf",
+                "330uaugs0",
+                "403tvlansgnd",
                 "404e2ewrt",
                 "405suggbs0",
-                "408nodedup",
-                "audseq",
-                "chk1cln",
-                "nofbkcf",
-                "rmvmorefrq",
+                "408nodedups0",
+                "afftoalton",
+                "chk1cf",
+                "nopreloadsscf",
+                "perfimpcomb",
+                "sugdivdis",
                 "sydnoinputt",
-                "udstrclm8",
-                "udstrclm8cmp",
+                "udscahrfon",
+                "udstrblm5",
+                "wpcssopt",
+                "0329resp",
                 "scctl"
             ],
             "verbosity": "verbose",
-            "traceId": "6434189e8b734fa980cce36535bd06a8",
+            "traceId": "6439650b05764c50a4800fe3cf54c864",
             "isStartOfSession": true,
             "message": {
                 "locale": "zh-CN",
@@ -74,26 +76,26 @@
                         "SourceType": 1
                     }
                 ],
-                "timestamp": "2023-04-10T22:09:35+08:00",
+                "timestamp": "2023-04-14T22:36:57+08:00",
                 "author": "user",
                 "inputMethod": "Keyboard",
-                "text": "这个插件怎么创建魔法链接？",
+                "text": "你好",
                 "messageType": "Chat"
             },
-            "conversationSignature": "Z52Acw2pM8TXx0loIZGge8KCQOgg0uB4CJe3dns/5fM=",
+            "conversationSignature": "9cgF/IoeRPCbFpuHeUcRVhmtpP52vgh6yERcbA2YgnE=",
             "participant": {
-                "id": "844428653138895"
+                "id": "985155485310705"
             },
-            "conversationId": "51D|BingProd|058E65289DC12B0744D3286B1898C7C3CBBC0471028B0FA380430A4648E16B48",
+            "conversationId": "51D|BingProd|1BFEF59DCC2355627AB9A1D51149EE121D8673CA98C2FEBC372FD3871CAE03B3",
             "previousMessages": [
                 {
                     "author": "user",
-                    "description": "已有帐号？ 立即登录\r\n\r\nadd LICENSE.\r\n\r\n使用这些浏览器插件无法正常运行！\r\n\r\n非常欢迎大家反馈自己的建议，和在使用插件的过程中遇到的问题。\r\n\r\n如果有什么值得分享的事情，非常欢迎新建一个issues。\r\n\r\n非常欢迎大家反馈自己的建议，如果有好的建议可以随时新建一个issues。\r\n\r\n如果遇到问题可以先收索下issues，如果有相同的问题可以参考其他人的解决方案。 如果遇到无法解决的问题可以提新的issues，如果是插件运行时发生的问题，请打开F12切换到控制台将红色的报错信息截图提交。如果是其他问题请配上说明。\r\n\r\n我的魔法链接在 这里 可以找到，但是强烈不推荐大家用我的。建议自己创建最好的，或者用朋友的，创建的方法在最后面有写。（如果你们都用我的，小心把你们的Cookie全部存起来干好事awa）下面有cloudflareWorker创建魔法链接的教程。\r\n\r\n魔法链接有严格的格式要求，不匹配是不行的哦。 必须是这种形式，后面不能有空格。\r\n\r\n之后就进入到聊天页面啦！如果没用登录bing就去bing登录一下，插件会自动读取Cookie之后就可以用啦。\r\n\r\n因为请求创建聊天的api是需要Cookie的，所以在请求的时候所有'.bing.cn' 的Cookie都会被发送魔法链接，所以我非常不推荐使用别人分享给你的魔法链接，除非是非常信任的人。 Cookie泄漏是非常危险的，他人拿到你的Cookie可以不需要密码，不需要验证码，直接登录你的微软账号。\r\n\r\n魔法聊天 -> 使用魔法创建聊天后继续使用魔法聊天，这种方式速度较慢，稳定性取决于魔法链接，建议正常聊天无法使用时用。\r\n\r\n此插件是我开发的第一个浏览器插件， 仅用于学习和交流。\r\n\r\n我现在大一，上学期学的html+css正好用上了，js这学期才开课，现在才学了一半，技术是真的不行，勉勉强强写出来了。如果觉得界面太丑还请见谅，漂亮的真的写不出来QAQ。\r\n\r\n关于封号问题，这个是不存在的。只存在请求次数过多被限制的问题，通常第二天就好了。虽然不存在封号问题，但是为了我自己放心，调用api的时候还是严格按照官网上的请求格式调用的，不会有特征问题，放心用就是了。",
+                    "description": "<EMPTY>",
                     "contextType": "WebPage",
                     "messageType": "Context",
                     "messageId": "discover-web--page-ping-mriduna-----",
-                    "sourceName": "NewBingGoGo: 一个基于微软bingChat接口的浏览器AI对话插件。提供了好看的对话页面。实现了bingChat的大多数功能。国内可用！",
-                    "sourceUrl": "https://gitee.com/jja8/NewBingGoGo"
+                    "sourceName": "我需要举办6人晚宴。你能帮我推荐三道不包括坚果或海鲜的菜吗？ - 搜索",
+                    "sourceUrl": "https://www.bing.com/search?q=%E6%88%91%E9%9C%80%E8%A6%81%E4%B8%BE%E5%8A%9E6%E4%BA%BA%E6%99%9A%E5%AE%B4%E3%80%82%E4%BD%A0%E8%83%BD%E5%B8%AE%E6%88%91%E6%8E%A8%E8%8D%90%E4%B8%89%E9%81%93%E4%B8%8D%E5%8C%85%E6%8B%AC%E5%9D%9A%E6%9E%9C%E6%88%96%E6%B5%B7%E9%B2%9C%E7%9A%84%E8%8F%9C%E5%90%97%EF%BC%9F&iscopilotedu=1&form=MA13G9"
                 }
             ]
         }

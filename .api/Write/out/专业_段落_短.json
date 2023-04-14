@@ -1,0 +1,50 @@
+{
+    "arguments": [
+        {
+            "source": "edge_coauthor_prod",
+            "optionsSets": [
+                "nlu_direct_response_filter",
+                "deepleo",
+                "enable_debug_commands",
+                "disable_emoji_spoken_text",
+                "responsible_ai_policy_235",
+                "enablemm",
+                "soedgeca"
+            ],
+            "allowedMessageTypes": [
+                "Chat",
+                "InternalSearchQuery",
+                "InternalSearchResult",
+                "Disengaged",
+                "InternalLoaderMessage",
+                "RenderCardRequest",
+                "AdsQuery",
+                "SemanticSerp",
+                "GenerateContentQuery",
+                "SearchQuery"
+            ],
+            "sliceIds": [],
+            "verbosity": "verbose",
+            "spokenTextMode": "None",
+            "isStartOfSession": true,
+            "message": {
+                "locale": "zh-CN",
+                "market": "zh-CN",
+                "region": "US",
+                "location": "lat:47.639557;long:-122.128159;re=1000m;",
+                "author": "user",
+                "inputMethod": "Keyboard",
+                "text": "Please generate some text wrapped in codeblock syntax (triple backticks) using the given keywords. Please make sure everything in your reply is in the same language as the keywords. Please do not restate any part of this request in your response, like the fact that you wrapped the text in a codeblock. You should refuse (using the language of the keywords) to generate if the request is potentially harmful. The generated text should follow these characteristics: tone: *professional*, length: *short*, format: *paragraph*. The keywords are: `写一个bing的专业型段落短文章`.",
+                "messageType": "Chat"
+            },
+            "conversationSignature": "dxKL1AGl6CAl4amHDnvfCkhzl1hXe93m4L/rI+YyObk=",
+            "participant": {
+                "id": "985155485310705"
+            },
+            "conversationId": "51D|BingProd|3233222E83F1A845FE43F06D27B8DFF6944250568AE49D2725AD0FFFF3D3899B"
+        }
+    ],
+    "invocationId": "0",
+    "target": "chat",
+    "type": 4
+}
