@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title id="docTitle">NewBingGoGo:创作</title>
+    <link rel="stylesheet" href="../Chat/css/github-markdown-css.css">
+    <link rel="stylesheet" href="../Chat/css/katex.min.css">
+    <link rel="stylesheet" href="../Chat/css/bing.css">
+    <link rel="stylesheet" href="./css/Wtite.css">
+</head>
+
+<body>
+    <div id="background" class="b"></div>
+    <div id="head">
+        <div id='head-img-div'>
+            <h2>创作</h2>
+            <h3 id="goGoSubtitle">想创作什么呢？我来帮你！</h3>
+        </div>
+    </div>
+
+
+
+    <div id="body">
+        <div id="body-top"></div>
+        <div id="body-body">
+            <div id="tail">
+                <h2 id="tall-title">创作领域</h2>
+                <div id="input-div">
+                    <textarea id="input" type="text" enterkeyhint="send" maxlength="2000" autocapitalize="off"
+                        autocomplete="off" aria-autocomplete="both" spellcheck="false" aria-label="询问必应"
+                        autocorrect="off" placeholder="创作的主题..."></textarea>
+                </div>
+
+                <div class="select-div">
+                    <h3 class="select-title">语气</h3>
+                    <div class="select-select">
+                        <div class="select-buottn">专业</div>
+                        <div class="select-buottn">休闲</div>
+                        <div class="select-buottn">热情</div>
+                        <div class="select-buottn">信息</div>
+                        <div class="select-buottn">古怪</div>
+                    </div>
+                </div>
+
+                <div class="select-div">
+                    <h3 class="select-title">格式</h3>
+                    <div class="select-select">
+                        <div class="select-buottn">段落</div>
+                        <div class="select-buottn">电子邮件</div>
+                        <div class="select-buottn">博客文章</div>
+                        <div class="select-buottn">创意</div>
+                    </div>
+                </div>
+
+                <div class="select-div">
+                    <h3 class="select-title">长度</h3>
+                    <div class="select-select">
+                        <div class="select-buottn">短</div>
+                        <div class="select-buottn">中</div>
+                        <div class="select-buottn">长</div>
+                    </div>
+                </div>
+
+
+                <input id="send" class="ThemeColors" type="button" value="生成草稿">
+            </div>
+
+            <div id="chat">
+                <div class="bing">
+                    <div class="adaptiveCardsFatherDIV">
+                        <div class="textBlock markdown-body">
+                            我已经准备好啦！快和我聊天吧！
+                        </div>
+                        <div class="throttling">
+                            0 / 0
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="body-bottom"></div>
+
+    </div>
+
+
+
+
+    <!-- 为什么要把这些全部留着？因为我不想改js -->
+    <!-- 这个div没啥用，但是得留着，不然报错哦 -->
+    <div style="display: none;">
+        <div style="text-align: center;">
+            <h1>NewBingGoGo</h1>
+            <h2>简单的开始和NewBing聊天</h2>
+        </div>
+        <div id="chatTypeDiv" style="opacity: 1;">
+            <div class="chatTypeChose" id="chatTypeChoseCreate">
+                <p>更多</p>
+                <h3>有创造力</h3>
+            </div>
+            <div class="chatTypeChose Chose" id="chatTypeChoseBalance">
+                <p>更多</p>
+                <h3>平衡</h3>
+            </div>
+            <div class="chatTypeChose" id="chatTypeChoseAccurate">
+                <p>更多</p>
+                <h3>准确</h3>
+            </div>
+        </div>
+    </div>
+    <!-- 聊天记录 -->
+    <!-- 这个页面没用，但是得留着，因为去掉会报错 -->
+    <div id="ChatRecordsListDivOut" class="notShow" style="display: none;">
+        <div id="ChatRecordsListDiv">
+            <div>
+                <h3>开发时测试，开发时测试</h3>
+                <p>到时候这个会被覆盖掉，反正也不显示。懒得删了</p>
+            </div>
+        </div>
+    </div>
+    <!-- 保存功能，这个页面没用但是得留着 -->
+    <div id='head-li-div' style="display: none;">
+        <li class="ChatRecordsNameli">
+            <div id="ChatRecordsServer">保存</div>
+            <div id="ChatRecordsNameInputDiv" class="noshow">
+                <input type="text" id="ChatRecordsNameInput" value="新的聊天">
+                <div id="ChatRecordsNameNo">✖</div>
+            </div>
+        </li>
+        <li id="showChatRecords">聊天记录</li>
+    </div>
+    <!-- 聊天建议，这个页面没用，但是得留着 -->
+    <div id="SearchSuggestions" style="display: none;">
+    </div>
+    <!-- 开始新主题按钮，没用，但是留着 -->
+    <input id="restart" type="button" value="开始新主题" style="display: none;">
+
+
+
+    <script src="../Chat/js/marked.min.js"></script>
+    <script src="../Chat/js/katex.min.js"></script>
+    <script src="../Chat/js/auto-render.min.js"></script>
+    <script src="../Chat/js/GetSet.js"></script>
+    <script src="../Chat/js/ChatMessages.js"></script>
+    <script src="../Chat/js/optionsSets.js"></script>
+    <script src="../Chat/js/bingChatHub.js"></script>
+    <script src="../Chat/js/parserReturn.js"></script>
+    <script src="../Chat/js/bing.js"></script>
+</body>
+
+</html>
