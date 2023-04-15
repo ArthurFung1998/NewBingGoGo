@@ -2,15 +2,9 @@
 一个基于微软ChatGTP GTP4的NewBing接口的浏览器AI对话插件。提供了好看的对话页面。实现了NewBing的大多数功能，还添加了一些自己的特色功能。开源免费，国内可用！
 
 ## 使用方法
-在开始使用插件前阅读这篇文档可以节省大量的时间和精力自己研究。这个非常重要！
+在开始使用插件前阅读这篇文档可以节省大量的时间和精力自己研究。这个**非常重要**！
 
-**非常重要，一定要看**
-
-**非常重要，一定要看**
-
-**非常重要，一定要看**
-
-[快速入门.md](https://gitee.com/jja8/NewBingGoGo.wikis/blob/master/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
+**[快速入门.md](https://gitee.com/jja8/NewBingGoGo.wikis/blob/master/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)**
 
 
 ## 主要功能展示
