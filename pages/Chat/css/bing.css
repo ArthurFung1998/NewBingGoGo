@@ -574,7 +574,10 @@ div.markdown-body {
 
 
 /* 窄窗口 */
-@media screen and (max-width:550px) {
+@media screen and (max-width:600px) {
+    :root{
+        font-size: 3.5vmin;
+    }
 
     #tail-in:has(#input:focus-visible) #restart,
     #tail-in:has(#input:hover) #restart{
@@ -605,8 +608,8 @@ div.markdown-body {
 /*手机 css*/
 
 @media screen and (orientation:portrait) and (max-device-width:800px) and (max-device-height:1000px) {
-    :root {
-        font-size: 32px;
+    :root{
+        font-size: 3.5vmin;
     }
 
     div.markdown-body {
