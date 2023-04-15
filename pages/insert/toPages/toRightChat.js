@@ -11,6 +11,6 @@ async function insertRightChatToThisTab(){
     chrome.tabs.sendMessage(tab.id,{
         type:'openWindow',
         pagePath:'/pages/RightChat/RightChat.html',
-        name:'NewBingGoGo 小窗'
+        name:'NewBingGoGo 聊天'
     });
 }
