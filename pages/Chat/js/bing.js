@@ -18,8 +18,6 @@ let chatRecordsListDiv = document.getElementById("ChatRecordsListDiv");
 var isSaveChatRecords = false;
 var thisChatType;
 
-reSetStartChatMessage();
-
 function getCurrentTime() {
 	let date = new Date();
 	let year = date.getFullYear();
@@ -365,7 +363,6 @@ function input_update_input_text_sstyle_show_update(v) {
 	}
 }
 input_text.addEventListener("input", input_update_input_text_sstyle_show_update);
-input_update_input_text_sstyle_show_update({ target: input_text });
 
 
 
@@ -505,6 +502,14 @@ showChatRecords.onclick = () => {
 	//加载聊天记录列表
 	reloadChatRecordsList();
 }
+
+
+
+//页面加载完成之后执行
+window.addEventListener('load',()=>{
+	reSetStartChatMessage();
+	input_update_input_text_sstyle_show_update({ target: input_text });
+});
 
 
 

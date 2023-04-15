@@ -12,6 +12,7 @@ var thisOpenBingGoGo = document.getElementById('this-open-bing-go-go');
 var okGitUrl = document.getElementById('okGitUrl');
 var okGitUrlNo = document.getElementById('okGitUrlNo');
 var okGitUrlGo = document.getElementById('okGitUrlGo');
+var thisOpenWrite = document.getElementById('this-open-write');
 
 var expUrl = new RegExp('^(https?://)([-a-zA-z0-9]+\\.)+([-a-zA-z0-9]+)+\\S*$');
 var magicUrl;
@@ -66,6 +67,11 @@ function loaded() {
 	//插入窗口到当前浏览器标签
 	thisOpenBingGoGo.onclick = () => {
 		insertRightChatToThisTab();
+	}
+
+	//插入窗口到浏览器标签
+	thisOpenWrite.onclick = ()=>{
+		insertWriteToThisTab();
 	}
 
 	//获取公共魔法链接

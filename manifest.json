@@ -39,7 +39,7 @@
 				"<all_urls>"
 			],
 			"js": [
-				"pages/RightChat/js/insert/insertRun.js"
+				"pages/insert/insertRun.js"
 			]
 		}
 	],
@@ -47,7 +47,8 @@
 		{
 			"resources": [
 				"/pages/RightChat/RightChat.html",
-				"/pages/RightChat/js/insert/insert.css"
+				"/pages/insert/insert.css",
+				"/pages/Write/Write.html"
 			],
 			"matches": [
 				"<all_urls>"

@@ -12,7 +12,7 @@ function getUuid() {
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if(message.type=='openWindow'){
         console.log("打开新的小窗。");
-        add();
+        add(message.pagePath,message.name);
     }
 })
 
@@ -42,21 +42,21 @@ window.addEventListener('message', (event) => {
 
 
 //添加聊天窗口
-function add() {
+function add(pagePath,name) {
     function insert(rootDiv,iframeName) {
         let shadow = rootDiv.attachShadow({ mode: 'open' });
         inTo = document.createElement("div");
         inTo.id = "newBingGoGoRightChat";
         inTo.style.zIndex = topZIndex++;
         inTo.innerHTML = `
-        <link rel="stylesheet" href="${chrome.runtime.getURL('/pages/RightChat/js/insert/insert.css')}">
+        <link rel="stylesheet" href="${chrome.runtime.getURL('/pages/insert/insert.css')}">
         <div id="top">
-            <div class="letf"">NewBingGoGo</div>
+            <div class="letf"">${name}</div>
             <div id="toMin" class="topRight">—</div>
             <div id="reLoad" class="topRight">↺</div>
             <div id="toClose" class="topRight">×</div>
         </div>
-        <iframe id="iframe" src="${chrome.runtime.getURL('/pages/RightChat/RightChat.html?name='+iframeName)}"></iframe>
+        <iframe id="iframe" src="${chrome.runtime.getURL(pagePath+'?name='+iframeName)}"></iframe>
         `;
         shadow.appendChild(inTo);
         document.body.append(rootDiv);

@@ -3,6 +3,11 @@
 	margin-right: 1rem;
 }
 
+#body{
+    margin: auto;
+    max-width: 40rem;
+}
+
 #head {
 	height: 2rem;
 	z-index: 100;
@@ -15,7 +20,7 @@
 	height: auto;
 	align-items: stretch;
 	background-color: rgba(255, 255, 255, 0);
-	margin-bottom: 1rem;
+	margin-bottom: 0rem;
 }
 
 #body-top {
@@ -26,6 +31,7 @@
 	opacity: 1 !important;
 	width: auto;
 	margin: 0;
+    margin-bottom: 1rem;
 }
 
 #input-div {
@@ -48,9 +54,11 @@
 
 #body-body {
 	border-radius: 1rem;
-	margin: 1rem;
+	margin: 0rem;
 	padding: 1rem;
 	background-color: #ffffff78;
+    padding-bottom: 0;
+    overflow: hidden;
 }
 
 #tall-title {
@@ -87,4 +95,50 @@
 	border: 1px solid #00000042;
 	border-radius: 0.6rem;
 	padding: 0 1rem;
+}
+
+.select-buottn:hover{
+    background-color: #0091ff1f;
+    cursor: pointer;
+}
+.select-buottn.selected{
+    background-color: #0091ff6b;
+}
+
+.bing>* {
+    animation: none;
+}
+
+.adaptiveCardsFatherDIV, .my>.bobo {
+    max-width: none;
+    display: block;
+    margin-bottom: 0rem;
+    background-color: #ffffff00;
+}
+.bing {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 1rem;
+}
+
+#chat{
+    background-color: #ffffff;
+    border-radius: 1rem;
+    min-height: 8rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.bing>.sourceAttributions{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #ffffff00;
+    align-items: flex-start;
+}
+
+#chat>.my,
+#chat>.bing>.InternalSearchQuery
+#chat>.bing>.sourceAttributions{
+    display: none;
 }

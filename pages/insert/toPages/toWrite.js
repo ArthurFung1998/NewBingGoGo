@@ -1,5 +1,5 @@
 //将聊天窗口插入到当前页面
-async function insertRightChatToThisTab(){
+async function insertWriteToThisTab(){
     let tab = await chrome.tabs.query({
         active:true,
         currentWindow:true
@@ -9,6 +9,8 @@ async function insertRightChatToThisTab(){
     }
     tab = tab[0];
     chrome.tabs.sendMessage(tab.id,{
-        type:'openWindow'
+        type:'openWindow',
+        pagePath:'pages/Write/Write.html',
+        name:'NewBingGoGo 创作'
     });
 }
