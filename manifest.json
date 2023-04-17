@@ -1,59 +1,53 @@
 {
-	"name": "NewBingGoGo",
-	"description": "一个基于微软bingChat接口的浏览器AI对话插件",
-	"version": "2023.4.15.2",
-	"manifest_version": 3,
-	"permissions": [
-		"storage",
-		"cookies",
-		"declarativeNetRequest",
-		"declarativeNetRequestWithHostAccess",
-		"declarativeNetRequestFeedback",
-		"unlimitedStorage",
-		"tabs",
-		"scripting",
-		"webRequest"
-	],
-	"optional_permissions": [],
-	"host_permissions": [
-		"*://*/*"
-	],
-	"icons": {
-		"128": "/img/nasapod128x128.png"
-	},
-	"action": {
-		"default_popup": "/pages/popup/popup.html"
-	},
-	"declarative_net_request": {
-		"rule_resources": [
-			{
-				"id": "1",
-				"enabled": true,
-				"path": "rules.json"
-			}
-		]
-	},
-	"content_scripts": [
-		{
-			"matches": [
-				"<all_urls>"
-			],
-			"js": [
-				"pages/insert/insertRun.js"
-			]
-		}
-	],
-	"web_accessible_resources": [
-		{
-			"resources": [
-				"/pages/RightChat/RightChat.html",
-				"/pages/insert/insert.css",
-				"/pages/Write/Write.html"
-			],
-			"matches": [
-				"<all_urls>"
-			]
-		}
-	],
-	"default_locale": "zh_CN"
+    "name": "NewBingGoGo",
+    "description": "一个基于微软NewBing接口的浏览器AI对话插件",
+    "version": "2023.4.15.2",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "cookies",
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess",
+        "declarativeNetRequestFeedback",
+        "unlimitedStorage",
+        "tabs",
+        "scripting",
+        "webRequest"
+    ],
+    "optional_permissions": [],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "icons": {
+        "128": "/img/nasapod128x128.png"
+    },
+    "action": {
+        "default_popup": "/pages/popup/popup.html"
+    },
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "1",
+            "enabled": true,
+            "path": "rules.json"
+        }]
+    },
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": [
+            "pages/insert/insertRun.js"
+        ]
+    }],
+    "web_accessible_resources": [{
+        "resources": [
+            "/pages/RightChat/RightChat.html",
+            "/pages/insert/insert.css",
+            "/pages/Write/Write.html"
+        ],
+        "matches": [
+            "<all_urls>"
+        ]
+    }],
+    "default_locale": "zh_CN"
 }
