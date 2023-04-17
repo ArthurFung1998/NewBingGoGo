@@ -170,7 +170,8 @@ body:has(#background.c) .ThemeColors{
 
 #tail-in {
     display: flex;
-    width: 80%;
+    width: 95%;
+    max-width: 75rem;
     align-items: center;
     justify-content: center;
     height: 80%;
@@ -257,7 +258,10 @@ body:has(.my) #restart {
 body {
     overflow-x: hidden;
 }
-
+#body{
+    max-width: 75rem;
+    margin: auto;
+}
 #body-top {
     height: 20vh;
     width: 100%;
@@ -592,10 +596,6 @@ div.markdown-body {
         width: 49%;
     }
 
-    #tail-in {
-        width: 90%;
-    }
-
     .bing>.sourceAttributions {
         flex-wrap: wrap;
     }
@@ -638,10 +638,6 @@ div.markdown-body {
     .adaptiveCardsFatherDIV,
     .my>.bobo {
         max-width: 88vw;
-    }
-
-    #tail-in {
-        width: 90%;
     }
 
     #restart {
