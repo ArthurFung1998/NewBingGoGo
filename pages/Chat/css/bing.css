@@ -393,8 +393,10 @@ body {
 }
 
 .bing {
-    display: grid;
-    justify-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
 }
 
 .bing>* {
@@ -406,8 +408,11 @@ body {
 }
 
 .my {
-    text-align: right;
+    display: flex;
     font-size: 1.3rem;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: nowrap;
 }
 
 .InternalSearchQuery,
@@ -428,7 +433,7 @@ body {
     background-color: #ffffff;
     border-radius: 1rem;
     padding: 1rem 1rem;
-    max-width: 85vw;
+    max-width: 90%;
     margin-bottom: 1rem;
     text-align: left;
 }
@@ -443,7 +448,7 @@ body {
 
 .bing>.sourceAttributions {
     font-size: 0.9rem;
-    max-width: 85vw;
+    max-width: 90%;
     margin: 0;
     margin-bottom: 1rem;
     display: inline-flex;
@@ -504,7 +509,7 @@ body {
     background-color: white;
     overflow: auto;
     padding: 1em;
-    width: 85vw;
+    width: 90%;
     max-width: 1100px;
 }
 
@@ -522,7 +527,7 @@ body {
 .GenerateContentQuery {
     background-color: #ffffff;
     border-radius: 1rem;
-    max-width: 85%;
+    max-width: 90%;
     margin-bottom: 1rem;
     text-align: center;
     font-size: 1rem;
@@ -597,8 +602,13 @@ div.markdown-body {
     }
 
     .bing>.sourceAttributions {
+        /* max-width: 90%; */
         flex-wrap: wrap;
     }
+    /* .adaptiveCardsFatherDIV,
+    .my>.bobo {
+        max-width: 90%;
+    } */
 
     .bing>.sourceAttributions>a:hover {
         flex: auto;
@@ -627,7 +637,7 @@ div.markdown-body {
     }
 
     .bing>.sourceAttributions {
-        max-width: 88vw;
+        /* max-width: 90%; */
         flex-wrap: wrap;
     }
     
@@ -635,10 +645,10 @@ div.markdown-body {
         flex: auto;
     }
 
-    .adaptiveCardsFatherDIV,
+    /* .adaptiveCardsFatherDIV,
     .my>.bobo {
-        max-width: 88vw;
-    }
+        max-width: 90%;
+    } */
 
     #restart {
         font-size: 1em;
