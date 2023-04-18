@@ -9,7 +9,7 @@
 ![](https://gitee.com/jja8/NewBingGoGo.wikis/raw/master/images/1.1.jpg)
 
 ### 创作功能
-![](https://gitee.com/jja8/NewBingGoGo.wikis/raw/master/images/1.2.jpg)
+![](https://gitee.com/jja8/NewBingGoGo.wikis/raw/master/images/1.2.png)
 
 ## 使用方法
 在开始使用插件前阅读这篇文档可以节省大量的时间和精力自己研究。这个**非常重要**！
