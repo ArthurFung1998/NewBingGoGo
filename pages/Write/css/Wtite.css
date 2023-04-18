@@ -159,6 +159,7 @@
 }
 
 #chat>.my,
-#chat>.bing>.InternalSearchQuery #chat>.bing>.sourceAttributions {
+#chat>.bing>.InternalSearchQuery,
+#chat>.bing>.sourceAttributions {
     display: none;
 }
