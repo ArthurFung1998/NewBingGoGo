@@ -12,7 +12,7 @@
 
 ### 小窗功能
 小窗实现了NewBing侧边栏的根据当前页面信息问答的功能，可以在同一个页面中同时打开多个小窗同时问答，高效地查阅资料和完成文章编辑工作。
-![](https://gitee.com/jja8/NewBingGoGo.wikis/raw/master/images/1.1.jpg)
+![](https://gitee.com/jja8/NewBingGoGo.wikis/raw/master/images/1.1.png)
 
 
 
