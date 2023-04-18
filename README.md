@@ -2,14 +2,19 @@
 一个基于微软ChatGTP GTP4的NewBing接口的浏览器AI对话插件。提供了好看的对话页面。实现了NewBing的大多数功能，还添加了一些自己的特色功能。开源免费，国内可用！
 
 ## 主要功能展示
-### 主页面
+### 聊天功能
+聊天实现了NewBing的大多数功能，搜索，画图，天气，地图等等。
 ![](https://gitee.com/jja8/NewBingGoGo.wikis/raw/master/images/1.png)
 
+### 创作功能
+创作实现了NewBing侧边栏的撰写的大多数功能，可更具需求生成文章。
+![](https://gitee.com/jja8/NewBingGoGo.wikis/raw/master/images/1.2.png)
+
 ### 小窗功能
+小窗实现了NewBing侧边栏的根据当前页面信息问答的功能，可以在同一个页面中同时打开多个小窗同时问答，高效地查阅资料和完成文章编辑工作。
 ![](https://gitee.com/jja8/NewBingGoGo.wikis/raw/master/images/1.1.jpg)
 
-### 创作功能
-![](https://gitee.com/jja8/NewBingGoGo.wikis/raw/master/images/1.2.png)
+
 
 ## 使用方法
 在开始使用插件前阅读这篇文档可以节省大量的时间和精力自己研究。这个**非常重要**！
